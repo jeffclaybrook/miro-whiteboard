@@ -107,6 +107,10 @@ export type CanvasState =
   current?: Point
  }
  | {
+  mode: CanvasMode.Translating
+  current: Point
+ }
+ | {
   mode: CanvasMode.Inserting
   layerType: LayerType.Ellipse | LayerType.Rectangle | LayerType.Text | LayerType.Note
  }
